@@ -238,7 +238,8 @@ a.elemadded:hover {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  background: url('../upload/slide/bg.jpg') center fixed;
+  /*background: url('../upload/slide/bg.jpg') center fixed;*/
+  background: #aaaaaa;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
