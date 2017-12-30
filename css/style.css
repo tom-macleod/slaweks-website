@@ -444,9 +444,9 @@ a.button-one {
   background: #ffba00;
   text-align: center;
 }
-.banner-section h2 {
+.banner-section h1 {
   color: #222222;
-  font-size: 17px;
+  font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
