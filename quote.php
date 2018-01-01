@@ -3,10 +3,10 @@
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "besimdauti24@gmail.com");
+	define("__TO__", "scotnest.info@gmail.com");
 
 	#Message subject
-	define("__SUBJECT__", "examples.com = From:");
+	define("__SUBJECT__", "Scotnest Inquiry - From:");
 
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
@@ -38,14 +38,11 @@
 	}
 
 	//Get post data
-	if(isset($_POST['last-name']) and isset($_POST['mail']) and isset($_POST['your-comment'])){
-		$name 	 = $_POST['first-name'].' '.$_POST['last-name'];
+	if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['your-comment'])){
+		$name 	 = $_POST['name'];
 		$mail 	 = $_POST['mail'];
 		$tell  = $_POST['tel-number'];
 		$type  = $_POST['type'];
-		$budget  = $_POST['budget'];
-		$time  = $_POST['time'];
-		$area  = $_POST['your-area'];
 		$comment = $_POST['your-comment'];
 
 		if($name == '') {
@@ -59,15 +56,6 @@
 			exit();
 		}else if($type == ''){
 			echo json_encode(array('info' => 'error', 'msg' => "Please chose your type."));
-			exit();
-		}else if($budget == ''){
-			echo json_encode(array('info' => 'error', 'msg' => "Please chose your budget."));
-			exit();
-		}else if($time == ''){
-			echo json_encode(array('info' => 'error', 'msg' => "Please chose your time."));
-			exit();
-		}else if($area == ''){
-			echo json_encode(array('info' => 'error', 'msg' => "Please chose your Area."));
 			exit();
 		}else if($comment == ''){
 			echo json_encode(array('info' => 'error', 'msg' => "Please enter your message."));
@@ -98,18 +86,6 @@
 				<tr style="height: 32px;">
 				  <th align="right" style="width:150px; padding-right:5px;">Type:</th>
 				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $type .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Budget:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $budget .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Your Area:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $are .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Time to bedone:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $time .'</td>
 				</tr>
 				<tr style="height: 32px;">
 				  <th align="right" style="width:150px; padding-right:5px;">Description:</th>
