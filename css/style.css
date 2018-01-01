@@ -712,7 +712,7 @@ a.button-one {
 .testimonial-section {
   padding: 60px 0;
   position: relative;
-  background: url('../upload/banners/1.jpg') fixed;
+  background: url('../images/custom/home-two.jpg') fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
