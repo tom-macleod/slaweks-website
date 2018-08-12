@@ -11,7 +11,7 @@
  8.services page
  9.projects page
  10.blog page
- 11.single project page
+ 11.single project pagebanner-section
  12.contact page
  13.footer
  14.Responsive part
@@ -446,7 +446,7 @@ a.button-one {
   padding: 10px 35px;
 }
 .banner-section {
-  padding: 50px 0;
+  padding: 25px 0;
   background: #ffba00;
   text-align: center;
 }
