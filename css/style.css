@@ -22,6 +22,14 @@
   border: 0.7px solid #708090;
 }
 
+.fifteen-px-space {
+  margin-right: 15px;
+}
+
+.fifty-px-space {
+  margin-right: 50px;
+}
+
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
