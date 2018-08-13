@@ -30,6 +30,16 @@
   margin-right: 50px;
 }
 
+.no-decor-link:hover {
+  text-decoration: none;
+  color: #ffba00;
+}
+
+.no-decor-link {
+  color: white;
+}
+
+
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
